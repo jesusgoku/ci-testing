@@ -9,8 +9,17 @@
  <property name="phpunit" value="${basedir}/vendor/bin/phpunit"/>
 
   <target name="full-build"
-         depends="prepare,phpunit"
+         depends="composer,prepare,phpunit"
          description="Performs static analysis, runs the tests, and generates project documentation"/>
+
+<target name="composer" description="Installing composer dependencies">
+ <exec executable="composer" failonerror="true">
+  <arg value="install" />
+  <arg value="--dev" />
+  <arg value="--prefer-dist" />
+  <arg value="--no-progress" />
+ </exec>
+</target>
 
  <target name="clean"
          unless="clean.done"

@@ -1,2 +1,6 @@
 vendor
 .phpintel
+build/*
+!build/phpmd.xml
+!build/phpcs.xml
+cache.properties

@@ -8,6 +8,10 @@
  <property name="phpmd"   value="phpmd"/>
  <property name="phpunit" value="phpunit"/>
 
+  <target name="full-build"
+         depends="prepare,phpunit"
+         description="Performs static analysis, runs the tests, and generates project documentation"/>
+
  <target name="prepare"
          unless="prepare.done"
          depends="clean"

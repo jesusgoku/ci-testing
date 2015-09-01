@@ -1,0 +1,20 @@
+{
+    "name": "jesusurrutia/ci-testing",
+    "description": "Proyect for testing continous integration",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jesús Urrutia",
+            "email": "jesus.urrutia@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8.6"
+    }
+}

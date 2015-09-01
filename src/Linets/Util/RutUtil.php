@@ -84,7 +84,6 @@ class RutUtil
      */
     private static function formatRutPart($rawRutPart)
     {
-        // return number_format($rawRutPart, 0, ',', '.');
         return self::addThousandSeparators($rawRutPart);
     }
 

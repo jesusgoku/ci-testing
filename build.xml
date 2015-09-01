@@ -20,13 +20,16 @@
          depends="composer,prepare,lint,phpunit-no-coverage"
          description="Performs a lint check and runs the tests (without generating code coverage reports)"/>
 
-<target name="composer" description="Installing composer dependencies">
+<target name="composer"
+            unless="composer.done"
+            description="Installing composer dependencies">
  <exec executable="composer" failonerror="true">
   <arg value="install" />
   <arg value="--dev" />
   <arg value="--prefer-dist" />
   <arg value="--no-progress" />
  </exec>
+ <property name="composer.done" value="true"/>
 </target>
 
  <target name="clean"

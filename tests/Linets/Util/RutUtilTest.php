@@ -32,7 +32,7 @@ class RutUtilTest extends PHPUnit_Framework_TestCase
             '11.111.111' => 1,
             '11.111111' => 1,
             '11111.111' => 1,
-            '11111111' => 2,
+            '11111111' => 1,
         );
 
         foreach ($rutList as $rutPart => $verificationDigit) {

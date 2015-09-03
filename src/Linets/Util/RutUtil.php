@@ -143,10 +143,6 @@ class RutUtil
      */
     private static function split($sanityRut)
     {
-        if (preg_match('/[^k0-9]/', $sanityRut)) {
-            throw new \InvalidArgumentException('Before sanity rut');
-        }
-
         return array(
             self::RUT_PART => (int) substr($sanityRut, 0, -1),
             self::VD_PART => (string) substr($sanityRut, -1),

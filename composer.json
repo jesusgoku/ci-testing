@@ -8,7 +8,6 @@
             "email": "jesus.urrutia@gmail.com"
         }
     ],
-    "require": {},
     "autoload": {
         "psr-0": {
             "": "src/"
@@ -21,6 +20,8 @@
         "pdepend/pdepend" : "2.1.0",
         "phpmd/phpmd" : "@stable",
         "sebastian/phpcpd": "*",
-        "theseer/phpdox": "~0.8.1"
+        "theseer/phpdox": "~0.8.1",
+        "codeclimate/php-test-reporter": "dev-master",
+        "satooshi/php-coveralls": "^0.6.1"
     }
 }

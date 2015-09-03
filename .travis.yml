@@ -10,3 +10,6 @@ script: vendor/bin/phpunit
 
 notifications:
   email: false
+
+after_script:
+  - php vendor/bin/coveralls
